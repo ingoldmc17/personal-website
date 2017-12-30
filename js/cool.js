@@ -7,7 +7,19 @@ $( document ).ready(function() {
   var emailBtnHeight = $(".emailBtn").height();
   var emailBtnWidth = $(".emailBtn").width();
 
-  
+  var msHeaderHeight = $("#moon-and-stone-header").height();
+
+  $("#kannapolis-pawn-header").height(msHeaderHeight);
+  $("#personal-website-header").height(msHeaderHeight);
+
+  $(window).resize(
+  	function() {
+  	  var msNewHeaderHeight = $("#moon-and-stone-header").height();	
+  	  $("#kannapolis-pawn-header").height(msNewHeaderHeight);
+      $("#personal-website-header").height(msNewHeaderHeight);
+  	}
+  );
+
   $(".cool").hover(
   function() {
 	  $("span.cool-text").html("😎");
@@ -21,36 +33,12 @@ $( document ).ready(function() {
 		$(this).height(callBtnHeight);
 		$(this).width(callBtnWidth);
 		$(this).addClass('smallerText');
-		$(this).html("(704) 433-6315");
+		$(this).html("(980) 643-1067");
 	}, function() {
 		$(this).removeClass('smallerText');
 		$(this).html('<i class="fa fa-phone"></i>&nbsp;Call Me');
 	}
   );	
-  
-  /*
-  $(".emailBtn").hover(
-	function() {
-		$(this).height(emailBtnHeight);
-		$(this).width(emailBtnWidth);
-		$(this).addClass('smallerText');
-		$(this).html("ingoldmc17@gmail.com");
-	}, function() {
-		$(this).removeClass('smallerText');
-		$(this).html('<i class="fa fa-envelope-o"></i>&nbsp;Email Me');
-	}	
-	)
-	*/
-
-
-/*
-$("img")
-	.hover(function() {
-		$(this).attr("src","images/myFace2.jpg");
-	}, function() {
-		$(this).attr("src","images/myFace1.jpg");
-	} )
-*/
   
   
   

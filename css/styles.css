@@ -5627,3 +5627,27 @@ body > * {
     top: 0px;
     pointer-events: none;
     background: linear-gradient(to bottom, #343a40 0%, transparent 100%); }
+
+.contact-email {
+  display: inline;
+}
+
+.centered-glyph {
+  vertical-align: middle;
+}
+
+.contact-section {
+  background-color: #90A4AE;
+}
+
+.stripe {
+  background-color: #F5F5F5;
+}
+
+.about-me-section {
+  background-image: url("../images/mississippi-river.jpg");
+}
+
+.no-decor-link:hover {
+  text-decoration: none;
+}
